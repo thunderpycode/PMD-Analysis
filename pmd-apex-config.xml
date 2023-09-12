@@ -2,6 +2,7 @@
 <ruleset xmlns="http://pmd.sourceforge.net/ruleset/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Default ruleset used by the CodeClimate Engine for Salesforce.com Apex" xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 http://pmd.sourceforge.net/ruleset_2_0_0.xsd">
    <description>Default ruleset used by the Code Climate Engine for Salesforce.com Apex</description>
    <exclude-pattern>.*/.sfdx/.*</exclude-pattern>
+  <!-- XML Rules -->
    <!-- COMPLEXITY -->
    <rule ref="category/apex/design.xml/ExcessiveClassLength" message="Avoid really long classes (lines of code)">
       <priority>3</priority>
@@ -266,4 +267,21 @@
 	<rule ref="category/vf/security.xml/VfUnescapeEl" >
 		<priority>3</priority>
 	</rule>
+   <!-- JavaScript Rules -->
+
+<rule ref="category/ecmascript/bestpractices.xml/AvoidWithStatement"  message="Avoidwith statement.">
+   <priority>3</priority>
+</rule>
+<rule ref="category/ecmascript/bestpractices.xml/ConsistentReturn" message="Avoid with Return Consistently">
+   <priority>3</priority>
+</rule>
+<rule ref="category/ecmascript/bestpractices.xml/GlobalVariable"  message="Avoid using accidently global variables">
+   <priority>3</priority>
+</rule>
+<rule ref="category/ecmascript/bestpractices.xml/ScopeForInVariable"  message="Better to explicitly scope the variable name.">
+   <priority>3</priority>
+</rule>
+<rule ref="category/ecmascript/bestpractices.xml/UseBaseWithParseInt"  message="This rule checks for usages of parseInt">
+   <priority>3</priority>
+</rule>
 </ruleset>
