@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- pmd check -d force-app/main/default/classes -f xslt -r pmd-report.html -R pmd-apex-config.xml -P xsltFilename=custom-style.xs -->
 <ruleset xmlns="http://pmd.sourceforge.net/ruleset/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Default ruleset used by the CodeClimate Engine for Salesforce.com Apex" xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 http://pmd.sourceforge.net/ruleset_2_0_0.xsd">
    <description>Default ruleset used by the Code Climate Engine for Salesforce.com Apex</description>
    <exclude-pattern>.*/.sfdx/.*</exclude-pattern>
@@ -267,7 +268,7 @@
 	<rule ref="category/vf/security.xml/VfUnescapeEl" >
 		<priority>3</priority>
 	</rule>
-   <!-- JavaScript Rules -->
+                                        <!-- JavaScript Rules -->
 
 <rule ref="category/ecmascript/bestpractices.xml/AvoidWithStatement"  message="Avoidwith statement.">
    <priority>3</priority>
@@ -284,4 +285,5 @@
 <rule ref="category/ecmascript/bestpractices.xml/UseBaseWithParseInt"  message="This rule checks for usages of parseInt">
    <priority>3</priority>
 </rule>
+pmd-apex-config.xml
 </ruleset>
